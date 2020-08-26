@@ -67,6 +67,7 @@ h3{
     font-family: 'Patrick Hand', cursive;
     color: black;
     
+    
 }
 .title{
     display:flex;
@@ -88,8 +89,8 @@ header {
     justify-content: space-evenly;
     font-family:'Patrick Hand', cursive;
     font-size: 2rem;
-    padding:1rem ;
-    color: darkslategray
+    margin: 3rem;
+    text-decoration:none;
 }
 nav {
     display: flex;
@@ -126,17 +127,19 @@ nav {
     height: 400px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
     padding:3rem;
+    
+
 }
 
 .gallery h3{
     padding:1rem;
     font-size:2em;
     text-align: center;
+    padding-bottom: 3rem;
+    text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 700;
 }
-/* #main{
-    width:800 px;
-    box-shadow: 5px 10px #888888; */
-}
+
 footer nav a{
     display:flex;
     justify-content: center;
@@ -144,6 +147,9 @@ footer nav a{
     align-items: center;
     width:90%;
     padding:1rem;
+    text-decoration:none;
+    font-family:'Patrick Hand', cursive; 
+    font-size: 2rem;
 }
 footer{
     display:flex;
@@ -158,10 +164,26 @@ footer{
 
 /* Effects */
 
-
-
-
+a:link {
+    color: #2f4f4f;
+    text-decoration:none;
+}
+/* visited link */
+a:visited {
+    color: #384b4b;
+    ;
+  }
   
+  /* mouse over link */
+  a:hover {
+    color: Black;
+    transform: scale(1.2);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
   /* [2] Transition property for smooth transformation of images */
   .box1 img {
     transition: transform .5s ease;
@@ -169,5 +191,6 @@ footer{
   
   /* [3] Finally, transforming the image when container gets hovered */
   .box1:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    position:
   }
