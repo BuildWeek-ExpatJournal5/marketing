@@ -385,9 +385,52 @@ h2{
 
 @media screen and (max-width: 500px){
 
-
-
-
-
-
+    .box1:hover img {
+        transform: scale(1.5);
+    }
+    .background {
+        object-fit:contain;
+        background-position: center;
+        
+        width:500px;
+        height:10vh;
+        margin: 0 auto;
+        /* padding:5rem;
+        margin: 90px auto; */
+    }
+    .button{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        align-items: center;
+        justify-content: space-between;
+        font-family:'Patrick Hand', cursive;
+        font-size: 1.2rem;
+        /* margin: 3rem; */
+        text-decoration:none;
+    }
+    .button a{
+        width:4rem;
+    }
+    header{
+        flex-direction:column;
+    }
+    nav a{
+        font-size:1rem;
+    }
+    .background a{
+        Color:black;
+        text-align:center;
+        font-weight:700;
+        opacity:100;
+        transform: scale(2);
+        /* padding-bottom: 6rem; */
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            2px 2px 0 #000,
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
