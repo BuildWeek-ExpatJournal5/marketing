@@ -57,6 +57,7 @@ body {
     background: url("background.png");
     background-repeat: repeat;
   }
+
 h1{
     font-size: 3.5em;
     font-family: 'Permanent Marker', cursive;
@@ -101,11 +102,21 @@ nav {
     background-image:url('resources/adventure-5077760_1920.jpg');
     background-position: center;
     max-width:100rem;
-    height:400px;
-    text-align:center;
-    padding:150px;
-    margin: 90px auto;
+    height:20vh;
+    padding:5rem;
+    margin: 5rem auto;
     
+}
+.background a{
+    font-family: 'Permanent Marker', cursive;
+    display:flex;
+    align-content: baseline;
+    justify-content:center;
+    color: transparent;
+    opacity:1;
+    padding:5rem;
+    padding-bottom: 5rem;
+
 }
 
 .gallery {
@@ -167,6 +178,18 @@ footer{
 
 /* Effects */
 
+.background a:hover{
+    Color:black;
+    font-weight:700;
+    opacity:100;
+    transform: scale(3);
+    padding-bottom: 6rem;
+    
+
+}
+
+
+
 a:link {
     color: #2f4f4f;
     text-decoration:none;
@@ -175,33 +198,32 @@ a:link {
 a:visited {
     color: #384b4b;
     ;
-  }
-  
+}
+
   /* mouse over link */
-  a:hover {
+a:hover {
     color: Black;
     transform: scale(1.2);
-  }
-  
+}
+
   /* selected link */
-  a:active {
+a:active {
     color: blue;
-  }
+}
   /* [2] Transition property for smooth transformation of images */
-  .box1 img {
+.box1 img {
     transition: transform .5s ease;
-  }
-  
+}
+
   /* [3] Finally, transforming the image when container gets hovered */
-  .box1:hover img {
+.box1:hover img {
     transform: scale(1.2);
-    position:
-  }
+}
 
   /* TEAMS STYLING */
 
 
-  .devTeam {
+.devTeam {
     
     max-width:100rem;
     margin:0 auto ;
@@ -230,11 +252,13 @@ a:visited {
 .devTeam h3{
     padding:.5rem;
     font-size:2em;
-    padding-bottom:
+    padding-bottom:1rem;
+    padding-left:5rem;
     /* text-align: center; */
     
     text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
     font-weight: 700;
+    width:25rem;
 }
 
 .bio{
@@ -252,14 +276,82 @@ h2{
     flex-basis:auto;
     padding-right: 1rem;
     text-align:center;
+    width:20rem;
 }
 .box2{
     display:flex;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     align-items: center;
+    width:100rem;
 }
 #disclaimer{
     background-color:rgb(77, 141, 143);
-    color:gray;
+    color:black;
     
+}
+
+/* resize below */
+@media screen and (max-width: 1024px){
+    h1{
+        font-size:2.5rem;
+        color:green
+    }
+
+    .background {
+        background-position: center;
+        max-width:50rem;
+        height:200px;
+        padding:5rem;
+        margin: 90px auto;
+}
+.button{
+    display:flex;
+    /* flex-direction:row-reverse; */
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    /* margin: 3rem; */
+    text-decoration:none;
+}
+.button a{
+    width:4rem;
+}
+
+.gallery {
+    
+    max-width:900rem;
+    margin:0 auto ;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content:space-around;  
+    /* object-fit: contain; */
+    height:auto;
+    padding: 5rem;
+}
+.gallery img{
+    
+    width: 300px; 
+    height: 200px;
+    padding:.75rem .75rem 3rem .75rem;
+    background:rgba(255, 255, 255, 0.808);
+    
+    
+
+}
+
+.gallery h3{
+    padding:1rem;
+    font-size:2em;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 700;
+
+
+
+
 }
