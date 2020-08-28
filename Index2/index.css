@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/*
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,10 +21,10 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-
+    vertical-align: baseline;
+    
 /* HTML5 display-role reset for older browsers */
- /* article, aside, details, figcaption, figure, 
+  article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,13 +45,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} */
+} 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap');
 
 
-*{
+/* *{
 
-    border: 1px solid green; 
+    border: 1px solid green;  */
 }
 body {
     background: url("background.png");
@@ -114,8 +114,21 @@ nav {
     justify-content:center;
     color: transparent;
     opacity:1;
-    padding:5rem;
-    padding-bottom: 5rem;
+    padding:3rem;
+    padding-bottom: 3rem;
+    Color:black;
+    font-weight:700;
+    opacity:100;
+    font-size:2rem;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        2px 2px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    
 
 }
 
@@ -297,6 +310,7 @@ h2{
 #disclaimer{
     background-color:rgb(77, 141, 143);
     color:black;
+    text-align:center;
     
 }
 
