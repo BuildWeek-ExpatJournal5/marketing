@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,9 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-} */
+
 /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure, 
+ /* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,13 +45,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap');
 
 
 *{
-    /* color: Green;
-    border: 1px solid green */
+
+    border: 1px solid green; 
 }
 body {
     background: url("background.png");
@@ -233,7 +233,7 @@ a:active {
 
 .devTeam {
     
-    max-width:100rem;
+    width:80%;
     margin:0 auto ;
     display:flex;
     flex-direction:row;
@@ -258,21 +258,23 @@ a:active {
 }
 
 .devTeam h3{
-    padding:.5rem;
+    padding:2%;
     font-size:2em;
     padding-bottom:1rem;
-    padding-left:5rem;
+    padding-left:1%;
     /* text-align: center; */
     
     text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
     font-weight: 700;
-    width:25rem;
+    /* width: 10%; */
+    
 }
 
 .bio{
     font-family:'Patrick Hand', cursive;
     font-size: 1.5rem;
     display: flex;
+    width:60%;
 
 }
 h2{
@@ -290,7 +292,7 @@ h2{
     display:flex;
     padding-bottom: 6rem;
     align-items: center;
-    width:100rem;
+    
 }
 #disclaimer{
     background-color:rgb(77, 141, 143);
@@ -300,6 +302,7 @@ h2{
 
 /* resize below */
 @media screen and (max-width: 1024px){
+    /* INDEX RESIZE */
     h1{
         font-size:2.5rem;
         
@@ -358,12 +361,78 @@ h2{
     padding-bottom: 3rem;
     text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
     font-weight: 700;
+}
 
+/* Begin TEAMS RESIZE 1024px*/
 
-
+.devTeam {
+    
+    width:80%;
+    margin:0 auto ;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content:space-around;  
+    /* object-fit: contain; */
+    height:auto;
+    padding: 5rem;
+}
+.devTeam img{
+    display:center;
+    /* width: 600px; 
+    height: 400px; */
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    padding:1rem 1rem 3rem 1rem;
+    border-radius:1%;
+    background:rgba(255, 255, 255, 0.808);
+    
+    
 
 }
+
+.devTeam h3{
+    padding:2%;
+    font-size:2em;
+    padding-bottom:1rem;
+    padding-left:1%;
+    /* text-align: center; */
+    
+    text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 700;
+    /* width: 10%; */
+    
+}
+
+.bio{
+    font-family:'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    width:60%;
+
+}
+h2{
+    font-family:'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    font-weight:700;
+    padding: .5rem;
+    display:flex;
+    flex-basis:auto;
+    padding-right: 1rem;
+    text-align:center;
+    width:20rem;
+}
+.box2{
+    display:flex;
+    padding-bottom: 6rem;
+    align-items: center;
+    
+}
+
+
+
 @media screen and (max-width: 800px){
+    /* Begin index resize */
     .button{
         display:flex;
         /* flex-direction:row-reverse; */
@@ -379,24 +448,86 @@ h2{
     }
     .box1:hover img {
         transform: scale(1.85);
+    }
+/* End Index resize, begin TEAMS */
+
+
+.devTeam {
+    
+    width:80%;
+    margin:0 auto ;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content:space-around;  
+    /* object-fit: contain; */
+    height:auto;
+    padding: 5rem;
+}
+.devTeam img{
+    display:center;
+    /* width: 600px; 
+    height: 400px; */
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    padding:1rem 1rem 3rem 1rem;
+    border-radius:1%;
+    background:rgba(255, 255, 255, 0.808);
+    
+    
+
+}
+
+.devTeam h3{
+    padding:2%;
+    font-size:1.5rem;
+    
+   
+    
+    /* text-align: center; */
+    
+    
+   
+    
+}
+
+.bio{
+    font-family:'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    /* display: flex; */
+    width:100%;
+
+}
+h2{
+   
+    font-size: 1rem;
+    font-weight:700;
+   
+    justify-content: center;
+    
+}
+.box2{
+    display:flex;
+    flex-direction:column;
+    padding-bottom: 6rem;
+    align-items: center;
+    
+}
 
 
 }
 
 @media screen and (max-width: 500px){
-
+/* INDEX Resize */
     .box1:hover img {
         transform: scale(1.5);
     }
     .background {
-        object-fit:contain;
-        background-position: center;
-        
         width:500px;
         height:10vh;
         margin: 0 auto;
-        /* padding:5rem;
-        margin: 90px auto; */
+        
+        
     }
     .button{
         display:flex;
@@ -411,6 +542,7 @@ h2{
     }
     .button a{
         width:4rem;
+        
     }
     header{
         flex-direction:column;
@@ -421,6 +553,8 @@ h2{
     .background a{
         Color:black;
         text-align:center;
+        padding: 0;
+        padding-bottom: 0;
         font-weight:700;
         opacity:100;
         transform: scale(2);
@@ -433,4 +567,8 @@ h2{
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
+    }
+    .background a:hover{
+        padding:0;
+    }
 }
