@@ -6,7 +6,7 @@
 
 ### Getting Started
 
- - images are in resourse folder
+ - 
  - 
  - 
 
